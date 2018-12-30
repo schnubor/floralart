@@ -1,0 +1,57 @@
+@import "./variables";
+
+header {
+    height: calc(100vh - 20px);
+    background: url('./../images/bg.jpeg');
+    background-size: 140%;
+    background-position: 0px -180px;
+    background-repeat: no-repeat;
+
+    .navbar-logo {
+        width: 120px;
+    }
+
+    .intro {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        h1 {
+            color: white;
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #f0f0f0;
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 570px;
+            font-weight: 300;
+
+            em {
+                font-weight: 400;
+            }
+        }
+
+        .button {
+            margin-top: 16px;
+            border: 1px solid $beige;
+            border-radius: 6px;
+            padding: 0 16px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: $beige;
+            transition: .2s all;
+            opacity: .7;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "./variables";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400w');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+@import "./bootstrap-overrides.scss";
+@import "./header.scss";
+@import "./gallery.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+
+/* Space out content a bit */
+body {
+  font-family: 'Lato', sans-serif;
+}

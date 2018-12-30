@@ -1,0 +1,27 @@
+.navbar {
+  min-height: 80px;
+}
+
+.nav > li > a:hover {
+    background-color: transparent;
+}
+
+.nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav > li > a {
+    outline: none;
+    color: white;
+
+    &:hover {
+        color: #f0f0f0;
+    }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

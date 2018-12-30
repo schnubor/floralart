@@ -1,0 +1,14 @@
+@import "./variables";
+
+footer {
+  display: flex;
+  padding: 24px;
+  color: $blue;
+  background-color: $darkblue;
+
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+}
