@@ -2,10 +2,13 @@
 
 header {
     height: calc(100vh - 20px);
-    background: url('./../images/bg.jpeg');
+    max-height: 800px;
+    background: url(./../images/bg.jpeg);
     background-size: 140%;
     background-position: 0px -180px;
     background-repeat: no-repeat;
+    position: relative;
+    background-color: #303030;
 
     .navbar-logo {
         width: 120px;

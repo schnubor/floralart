@@ -1,4 +1,23 @@
+@import './variables';
+
 .gallery {
-    background-color: #6BBAB5;
-    height: calc(100vh - 20px);
+    background-color: $teal;
+    padding: 80px 0;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    padding: 00;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+    transition: .4s all;
+
+    img { width: 100%; }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0,0,0,.5);
+    }
 }
