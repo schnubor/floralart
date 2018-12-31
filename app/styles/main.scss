@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 @import "./variables";
@@ -13,6 +14,7 @@ $icon-font-path: '../fonts/';
 @import "./gallery.scss";
 @import "./contact.scss";
 @import "./footer.scss";
+@import "./carousel.scss";
 
 /* Space out content a bit */
 body {

@@ -14,9 +14,6 @@ var onWindowScroll = function (params) {
 
 window.addEventListener('scroll', onWindowScroll);
 
-lightbox.option({ wrapAround: true })
-
-
 // Select all links with hashes
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -42,3 +39,16 @@ $('a[href*="#"]')
             }
         }
     });
+
+$(function() {
+    var nextButton = '<div class="slick-next navButton"><i class="fal fa-chevron-right"></i></div>';
+    var prevButton = '<div class="slick-prev navButton"><i class="fal fa-chevron-left"></i></div>';
+
+    $('.carousel').slick({
+        dots: true,
+        nextArrow: nextButton,
+        prevArrow: prevButton,
+    });
+
+    lightbox.option({ wrapAround: true })
+});

@@ -5,7 +5,8 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "ekko-lightbox": "4.0.2",
-    "lightbox2": "lightbox#^2.10.0"
+    "lightbox2": "lightbox#^2.10.0",
+    "slick-carousel": "^1.8.1"
   },
   "overrides": {
     "bootstrap-sass": {

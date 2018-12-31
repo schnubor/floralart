@@ -1,3 +1,5 @@
+@import './variables';
+
 .navbar {
   min-height: 80px;
 }
@@ -12,10 +14,12 @@
 
 .nav > li > a {
     outline: none;
-    color: white;
+    color: $white;
+    opacity: .7;
+    transition: .2s all;
 
     &:hover {
-        color: #f0f0f0;
+        opacity: 1;
     }
 }
 

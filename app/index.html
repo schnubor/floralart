@@ -13,8 +13,11 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/lightbox2/dist/css/lightbox.css" />
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -74,30 +77,47 @@
 
   <section class="gallery" id="gallery">
     <div class="container">
+      <p class="title">Unsere Arbeiten</p>
+      <p class="subtitle">
+        Wir freuen uns, dass wir Ihnen hier einen kleinen Einblick in unsere kreative Welt geben
+        können.
+      </p>
+
       <div class="col-md-4">
-        <a href="./images/hochzeit-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
-          <img src="./images/hochzeit-thumb.jpg" class="img-fluid">
-        </a>
+        <div class="wrapper">
+          <a href="./images/hochzeit-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
+            <img src="./images/hochzeit-thumb.jpg" class="img-fluid">
+          </a>
+          <p class="description">Hochzeiten</p>
+        </div>
         <div class="hidden">
           <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
           <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
           <a href="https://unsplash.it/1200/768.jpg?image=266" data-lightbox="hochzeiten"></a>
         </div>
       </div>
+
       <div class="col-md-4">
-        <a href="./images/deko-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
-          <img src="./images/deko-thumb.jpg" class="img-fluid">
-        </a>
+        <div class="wrapper">
+          <a href="./images/deko-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
+            <img src="./images/deko-thumb.jpg" class="img-fluid">
+          </a>
+          <p class="description">Deko & Events</p>
+        </div>
         <div class="hidden">
           <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
           <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
           <a href="https://unsplash.it/1200/768.jpg?image=266" data-lightbox="hochzeiten"></a>
         </div>
       </div>
+
       <div class="col-md-4">
-        <a href="./images/trauerfloristik-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
-          <img src="./images/trauerfloristik-thumb.jpg" class="img-fluid">
-        </a>
+        <div class="wrapper">
+          <a href="./images/trauerfloristik-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
+            <img src="./images/trauerfloristik-thumb.jpg" class="img-fluid">
+          </a>
+          <p class="description">Trauerfloristik</p>
+        </div>
         <div class="hidden">
           <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
           <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
@@ -108,7 +128,25 @@
   </section>
 
   <section class="contact" id="contact">
-    Contact
+    <div class="container">
+      <p class="title">Unser Laden</p>
+      <p class="subtitle">
+        Wir würden uns freuen, wenn Sie auch einmal persönlich bei uns vorbei schauen. Mit kompetenter Fachberatung,
+        gepaart mit der Schönheit und Haltbarkeit unserer Blumen, möchten wir Ihnen ein Stück Natur für Ihr Zuhause
+        anbieten.
+      </p>
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="carousel">
+          <div><img src="./images/laden1.jpg" alt="Laden"></div>
+          <div><img src="./images/laden2.jpg" alt="Laden"></div>
+          <div><img src="./images/laden3.jpg" alt="Laden"></div>
+          <div><img src="./images/laden4.jpg" alt="Laden"></div>
+          <div><img src="./images/laden5.jpg" alt="Laden"></div>
+          <div><img src="./images/laden6.jpg" alt="Laden"></div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="map">
@@ -131,7 +169,9 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
   <script src="/bower_components/lightbox2/dist/js/lightbox.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
