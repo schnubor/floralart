@@ -10,7 +10,7 @@
         cursor: pointer;
         color: $white;
         position: absolute;
-        top: 50%;
+        top: calc(50% - 30px);
         opacity: .7;
         transition: .2s all;
 
@@ -25,6 +25,12 @@
 
     .slick-prev {
         left: -40px;
+    }
+
+    .slick-list{
+        box-shadow: 0 6px 16px rgba(0,0,0,.3);
+        font-size: 0;
+        border-radius: 6px;
     }
 
     .slick-dotted.slick-slider

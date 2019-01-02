@@ -35,20 +35,24 @@ $('a[href*="#"]')
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top - 80
-                }, 1000 );
+                }, 1000);
             }
         }
     });
 
-$(function() {
+$(function () {
     var nextButton = '<div class="slick-next navButton"><i class="fal fa-chevron-right"></i></div>';
     var prevButton = '<div class="slick-prev navButton"><i class="fal fa-chevron-left"></i></div>';
 
     $('.carousel').slick({
         dots: true,
+        fade: true,
         nextArrow: nextButton,
         prevArrow: prevButton,
     });
 
-    lightbox.option({ wrapAround: true })
+    lightbox.option({
+        wrapAround: true,
+        albumLabel: 'Bild %1 von %2',
+    })
 });
