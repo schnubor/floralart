@@ -40,9 +40,9 @@ $('a[href*="#"]')
         }
     });
 
-$(function () {
-    var nextButton = '<div class="slick-next navButton"><i class="fal fa-chevron-right"></i></div>';
-    var prevButton = '<div class="slick-prev navButton"><i class="fal fa-chevron-left"></i></div>';
+const initSlick = () => {
+    const nextButton = '<div class="slick-next navButton"><i class="fal fa-chevron-right"></i></div>';
+    const prevButton = '<div class="slick-prev navButton"><i class="fal fa-chevron-left"></i></div>';
 
     $('.carousel').slick({
         dots: true,
@@ -50,7 +50,9 @@ $(function () {
         nextArrow: nextButton,
         prevArrow: prevButton,
     });
+}
 
+$(function () {
     lightbox.option({
         wrapAround: true,
         albumLabel: 'Bild %1 von %2',

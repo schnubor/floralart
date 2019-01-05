@@ -1,10 +1,14 @@
 @import './variables';
 
 .title{
-    color: white;
+    color: $white;
     font-family: 'Abril Fatface', cursive;
     font-size: 32px;
     text-align: center;
+
+    &.dark {
+        color: #5f5548;
+    }
 }
 
 .subtitle {
@@ -12,8 +16,13 @@
     color: lighten( $teal, 40 );
     font-weight: 300;
     font-size: 18px;
+    line-height: 30px;
     max-width: 920px;
     margin: 20px auto 50px;
+
+    &.dark {
+        color: #5f5548;
+    }
 }
 
 .gallery {

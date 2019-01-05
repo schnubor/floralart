@@ -27,6 +27,8 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 </head>
 
 <body>
@@ -91,59 +93,37 @@
           </a>
           <p class="description">Hochzeiten</p>
         </div>
-        <div class="hidden">
-          <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=266" data-lightbox="hochzeiten"></a>
-        </div>
+        <div class="hidden lightbox-hochzeiten"></div>
       </div>
 
       <div class="col-md-4">
         <div class="wrapper">
-          <a href="./images/deko-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
+          <a href="./images/deko-thumb.jpg" class="thumbnail" data-lightbox="deko">
             <img src="./images/deko-thumb.jpg" class="img-fluid">
           </a>
           <p class="description">Deko & Events</p>
         </div>
-        <div class="hidden">
-          <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=266" data-lightbox="hochzeiten"></a>
-        </div>
+        <div class="hidden lightbox-deko"></div>
       </div>
 
       <div class="col-md-4">
         <div class="wrapper">
-          <a href="./images/trauerfloristik-thumb.jpg" class="thumbnail" data-lightbox="hochzeiten">
+          <a href="./images/trauerfloristik-thumb.jpg" class="thumbnail" data-lightbox="trauer">
             <img src="./images/trauerfloristik-thumb.jpg" class="img-fluid">
           </a>
           <p class="description">Trauerfloristik</p>
         </div>
-        <div class="hidden">
-          <a href="https://unsplash.it/1200/768.jpg?image=264" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=265" data-lightbox="hochzeiten"></a>
-          <a href="https://unsplash.it/1200/768.jpg?image=266" data-lightbox="hochzeiten"></a>
-        </div>
+        <div class="hidden lightbox-trauer"></div>
       </div>
     </div>
   </section>
 
   <section class="store" id="contact">
     <div class="container">
-      <p class="title">Unser Laden</p>
-      <p class="subtitle">
-        Wir würden uns freuen, wenn Sie auch einmal persönlich bei uns vorbei schauen. Mit kompetenter Fachberatung,
-        gepaart mit der Schönheit und Haltbarkeit unserer Blumen, möchten wir Ihnen ein Stück Natur für Ihr Zuhause
-        anbieten.
-      </p>
+      <p class="title laden dark"></p>
+      <p class="subtitle laden dark"></p>
       <div class="col-xs-10 col-xs-offset-1">
-        <div class="carousel">
-          <div><img src="./images/laden1.jpg" alt="Laden"></div>
-          <div><img src="./images/laden2.jpg" alt="Laden"></div>
-          <div><img src="./images/laden3.jpg" alt="Laden"></div>
-          <div><img src="./images/laden4.jpg" alt="Laden"></div>
-          <div><img src="./images/laden5.jpg" alt="Laden"></div>
-          <div><img src="./images/laden6.jpg" alt="Laden"></div>
+        <div class="carousel laden">
         </div>
       </div>
     </div>
@@ -176,16 +156,15 @@
       </div>
 
       <div class="col-sm-4">
-          <div class="flex">
-            <div class="icon">
-              <i class="fal fa-envelope"></i>
-            </div>
-            <div class="text">
-              <a href="mailto:info@floral-art.net">info@floral-art.net</a>
-            </div>
+        <div class="flex">
+          <div class="icon">
+            <i class="fal fa-envelope"></i>
+          </div>
+          <div class="text">
+            <a href="mailto:info@floral-art.net">info@floral-art.net</a>
           </div>
         </div>
-      <!-- info@floral-art.net -->
+      </div>
     </div>
   </section>
 
@@ -233,6 +212,10 @@
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
+
+  <script src="scripts/contentful.js"></script>
+  <script src="scripts/galleries.js"></script>
+  <script src="scripts/laden.js"></script>
 </body>
 
 </html>
