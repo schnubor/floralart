@@ -56,5 +56,27 @@ header {
                 text-decoration: none;
             }
         }
+
+        .covid-button {
+            margin-top: 16px;
+            margin-left: 16px;
+            border: 1px solid $red;
+            border-radius: 6px;
+            padding: 0 16px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            transition: .2s all;
+            opacity: .7;
+            background-color: $red;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
     }
 }
