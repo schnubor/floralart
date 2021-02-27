@@ -43,11 +43,26 @@
         }
     }
 
+    @media screen and (max-width: 991px) {
+        margin-bottom: 80px;
+
+        &:hover {
+            .thumbnail {
+                transform: translateY(0);
+                box-shadow: none;
+            }
+
+            .description {
+                bottom: -55px
+            }
+        }
+    }
+
     .thumbnail {
         width: 100%;
         border-radius: 6px;
         border: none;
-        padding: 00;
+        padding: 0;
         overflow: hidden;
         box-shadow: 0 2px 10px rgba(0,0,0,.3);
         transition: .4s all;
@@ -65,5 +80,10 @@
         width: calc(100% - 30px);
         opacity: 0;
         transition: .4s all;
+
+        @media screen and (max-width: 991px) {
+            opacity: 1;
+            bottom: -55px;
+        }
     }
 }
